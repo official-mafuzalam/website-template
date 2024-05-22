@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mango Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-yellow-500 text-white">
+      <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold">Mango Shop</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="container mx-auto p-5 text-center">
+        <h2 class="text-2xl font-bold mb-5">Welcome to Mango Shop</h2>
+        <p class="mb-5">
+          Discover the freshest and juiciest mangoes directly from the farm.
+        </p>
+        <a href="#shop" class="bg-yellow-500 text-white py-2 px-4 rounded"
+          >Shop Now</a
+        >
+      </section>
+
+      <section id="shop" class="container mx-auto p-5">
+        <h2 class="text-xl font-bold mb-5 text-center">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white p-5 rounded shadow">
+            <img
+              src="mango1.jpg"
+              alt="Mango 1"
+              class="w-full h-48 object-cover rounded mb-3"
+            />
+            <h3 class="text-lg font-bold">Alphonso Mango</h3>
+            <p class="mb-3">Sweet and juicy Alphonso mangoes.</p>
+            <button class="bg-yellow-500 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <img
+              src="mango2.jpg"
+              alt="Mango 2"
+              class="w-full h-48 object-cover rounded mb-3"
+            />
+            <h3 class="text-lg font-bold">Haden Mango</h3>
+            <p class="mb-3">Delicious Haden mangoes with a rich flavor.</p>
+            <button class="bg-yellow-500 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <img
+              src="mango3.jpg"
+              alt="Mango 3"
+              class="w-full h-48 object-cover rounded mb-3"
+            />
+            <h3 class="text-lg font-bold">Kent Mango</h3>
+            <p class="mb-3">Tasty Kent mangoes perfect for any occasion.</p>
+            <button class="bg-yellow-500 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto p-5 text-center">
+        <h2 class="text-xl font-bold mb-5">About Us</h2>
+        <p>
+          At Mango Shop, we are dedicated to providing the highest quality
+          mangoes directly from the farm to your table. Our mangoes are
+          handpicked to ensure freshness and flavor.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-5">
+      <p>&copy; 2024 Mango Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

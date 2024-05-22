@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS Shoes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+      <div class="container mx-auto flex justify-between items-center p-5">
+        <h1 class="text-3xl font-bold">OS Shoes</h1>
+        <nav class="relative">
+          <button class="bg-blue-700 py-2 px-4 rounded" id="menu-button">
+            Menu
+          </button>
+          <div
+            id="dropdown-menu"
+            class="hidden absolute right-0 mt-2 w-48 bg-white rounded shadow-lg"
+          >
+            <a
+              href="#home"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Home</a
+            >
+            <a
+              href="#shop"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Shop</a
+            >
+            <a
+              href="#about"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >About Us</a
+            >
+            <a
+              href="#contact"
+              class="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="container mx-auto text-center py-16 bg-blue-100"
+      >
+        <h2 class="text-4xl font-bold mb-4">Welcome to OS Shoes</h2>
+        <p class="mb-8">
+          Discover the latest trends and styles in footwear, perfect for any
+          occasion.
+        </p>
+        <a href="#shop" class="bg-blue-600 text-white py-2 px-6 rounded"
+          >Shop Now</a
+        >
+      </section>
+
+      <!-- Products Section -->
+      <section id="shop" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-5 rounded shadow-lg">
+            <img
+              src="shoe1.jpg"
+              alt="Shoe 1"
+              class="w-full h-64 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Running Shoes</h3>
+            <p class="mb-4">
+              Comfortable and durable running shoes for all terrains.
+            </p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+          <div class="bg-white p-5 rounded shadow-lg">
+            <img
+              src="shoe2.jpg"
+              alt="Shoe 2"
+              class="w-full h-64 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Casual Sneakers</h3>
+            <p class="mb-4">Stylish sneakers for everyday wear.</p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+          <div class="bg-white p-5 rounded shadow-lg">
+            <img
+              src="shoe3.jpg"
+              alt="Shoe 3"
+              class="w-full h-64 object-cover rounded mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Formal Shoes</h3>
+            <p class="mb-4">Elegant formal shoes for special occasions.</p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section
+        id="about"
+        class="container mx-auto text-center py-16 bg-blue-100"
+      >
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p>
+          At OS Shoes, we pride ourselves on offering high-quality footwear that
+          combines comfort, style, and durability. Our mission is to provide our
+          customers with the best shoe shopping experience possible.
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <form class="max-w-lg mx-auto bg-white p-8 rounded shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-3 py-2 border rounded"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-3 py-2 border rounded"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="w-full px-3 py-2 border rounded"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white py-2 px-4 rounded"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-5">
+      <p>&copy; 2024 OS Shoes. All rights reserved.</p>
+    </footer>
+
+    <!-- Dropdown Menu Script -->
+    <script>
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          const dropdownMenu = document.getElementById("dropdown-menu");
+          dropdownMenu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
